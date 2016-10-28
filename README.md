@@ -1,5 +1,5 @@
 # bash-bot
-[Telegram](https://telegram.org/) bot for bash access to your computer.
+[Telegram](https://telegram.org/) bot for bash access to your computer. Depends on [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot) library, where you can find all the documentation.
 
 ## How to run?
 1. Clone the repository and install requirements:  
