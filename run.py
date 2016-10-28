@@ -30,7 +30,7 @@ logger = logging.getLogger(__name__)
 
 @admin_only
 def start(bot, update):
-    update.message.reply_text('Hi, grihabor!')
+    update.message.reply_text('Hi, admin!')
 
 
 @admin_only
