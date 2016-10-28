@@ -55,7 +55,7 @@ def process_command(cmd):
         try:
             os.chdir(' '.join(cmd[1:]))
         except FileNotFoundError as e:
-            output.append(e)
+            output.append(str(e))
     else:
         process = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         cmd_output, cmd_error = process.communicate()
