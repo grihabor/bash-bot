@@ -1,6 +1,5 @@
 from secrets import TOKEN, ADMIN_CHAT_ID
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
-from telegram import Bot, Update
 import logging
 import subprocess
 import os
@@ -10,6 +9,8 @@ import socket
 
 def admin_only(f):
     def wrapper(bot, update):
+        logger.info('chat id: {}'.format(update.message.chat.id))
+
         if update.message.chat.id != ADMIN_CHAT_ID:
             update.message.reply_text('Nothing here')
             logger.info('text: \'{}\' chat id: {}'.format(update.message.text,
