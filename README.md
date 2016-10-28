@@ -3,20 +3,26 @@
 
 ## How to run?
 1. Clone the repository and install requirements:  
-```
-  git clone https://github.com/grihabor/bash-bot
-  cd bash-bot
-  pip install -r requirements.txt
-```
+
+.. code:: shell
+
+    git clone https://github.com/grihabor/bash-bot
+    cd bash-bot
+    pip install -r requirements.txt
+
 2. Create your bot via [BotFather](https://telegram.me/botfather) and get your apikey.
 3. Add file secrets.py to your project. Example:  
-```
-  TOKEN = 'YOUR_BOT_TOKEN'
-  ADMIN_CHAT_ID = YOUR_CHAT_ID
-```
+
+.. code:: python
+
+    TOKEN = 'YOUR_BOT_TOKEN'
+    ADMIN_CHAT_ID = YOUR_CHAT_ID
+    
 4. To find out what is YOUR_CHAT_ID run your bot:  
-```
-  python run.py
-```
-  and look at the logger info output.  
+
+.. code:: shell
+  
+    python run.py
+    
+and look at the logger info output.  
 5. Now fill YOUR_CHAT_ID field and rerun your bot. That's it! 
